@@ -125,5 +125,7 @@ public class Day7 {
         netbanking netbanking =new netbanking();
         netbanking.transfer();
     }
+
+
 }
 
