@@ -70,33 +70,6 @@ public class day6 {
     sc.nextLine();
 }*/
 
-    /*import java.util.Scanner;
-
-    class Student {
-        String name;
-        String regNo;
-        String dept;
-        int mathsMark;
-        int phyMark;
-        int csMark;
-        void getData(Scanner sc) {
-            System.out.print("Enter Name: ");
-            name = sc.nextLine();
-            System.out.print("Enter Register Number: ");
-            regNo = sc.nextLine();
-            System.out.print("Enter Department: ");
-            dept = sc.nextLine();
-            System.out.print("Enter Maths Mark: ");
-            mathsMark = sc.nextInt();
-            System.out.print("Enter Physics Mark: ");
-            phyMark = sc.nextInt();
-            System.out.print("Enter CS Mark: ");
-            csMark = sc.nextInt();
-            sc.nextLine();
-        void display(){
-
-            }
-    }}*/
         static class Attributes {
             String Name;
             String regno;
