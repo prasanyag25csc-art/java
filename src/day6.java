@@ -1,76 +1,4 @@
-public class day6 {
-    /* static class Car {
-        String Brand;
-        String Color;
-        int Speed;
-        int Fuel;
-
-        Car() {
-            System.out.println("constructor called");
-        }
-
-        Car(String Brand, String Color, int Speed, int Fuel) {
-            this.Brand = Brand;
-            this.Color = Color;
-            this.Speed = Speed;
-            this.Fuel = Fuel;
-        }
-
-        void accelarate(int speed) {
-            this.Speed += speed;
-            //this.Speed=Speed;
-        }
-
-        void declarate(int speed) {
-            this.Speed -= speed;
-        }
-
-        void refill(int fuel) {
-            this.Fuel += fuel;
-        }
-
-        void showFuel() {
-            System.out.println("Your Fuel is : " + Fuel);
-        }
-
-        void printDetails() {
-            System.out.println("Brand" + Brand);
-            System.out.println("Color" + Color);
-            System.out.println("Speed" + Speed);
-            System.out.println("Fuel" + Fuel);
-        }
-    }
-    public static void main(String[] args) {
-        Car car = new Car("Mahendra", "Black", 500, 90);
-        // car.Speed(500);
-        car.printDetails();
-        car.accelarate(500);
-        car.declarate(40);
-        car.refill(20);
-        car.printDetails();
-    }
-}*/
-
-
-/*void main() {
-    Scanner sc = new Scanner(System.in);
-    System.out.println("class definition");
-    String defition= sc.nextLine();
-    System.out.print("enter attribute:");
-    String attribute = sc.nextLine();
-    System.out.print("enter name");
-    String name = sc.nextLine();
-    System.out.print("enter reg no");
-    String reg= sc.nextLine();
-    System.out.print("enter department");
-    String department= sc.nextLine();
-    System.out.print("enter maths mark");
-    String maths= sc.nextLine();
-
-    sc.nextLine();
-}*/
-
-        static class Attributes {
+/*static class Attributes {
             String Name;
             String regno;
             String dept;
@@ -95,4 +23,59 @@ public class day6 {
                 System.out.println("cse mark:" + csemarks);
             }
         }
+    }*/
+
+public class Usefull {
+    static class Request {
+        String name;
+        String date;
+        String reason;
+
+        Request(String name, String date, String reason){
+            this.name = name;
+            this.date = date;
+            this.reason = reason;
+        }
+
+        void approve() {
+            System.out.println("Approving request");
+        }
+        void reject() {
+            System.out.println("Reject request");
+        }
     }
+
+    static class LeaveRequest extends Request {
+
+        LeaveRequest(String name, String date, String reason) {
+            super(name, date, reason);
+        }
+        void approveLeaveRequest() {
+            System.out.println("Approving leave request");
+        }
+        void rejectLeaveRequest() {
+            System.out.println("Reject leave request");
+        }
+    }
+    static class OnDutyRequest extends Request {
+
+        OnDutyRequest(String name, String date, String reason) {
+            super(name, date, reason);
+        }
+        void approveOnDutyRequest() {
+            System.out.println("Approving on duty request");
+        }
+        void rejectOnDutyRequest() {
+            System.out.println("Reject on duty request");
+        }
+    }
+
+    static void main() {
+        LeaveRequest leaveRequest = new LeaveRequest("Aravindh","21-10-7888","Fever");
+        leaveRequest.approveLeaveRequest();
+        OnDutyRequest onDutyRequest = new OnDutyRequest("Aravindh","21-10-5676","Culturals");
+        onDutyRequest.rejectOnDutyRequest();
+    }
+}
+
+
