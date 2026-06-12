@@ -30,7 +30,7 @@
     }
 */
 
-public class Day7 {
+/*public class Day7 {
     static class Request{
         String name;
         String date;
@@ -81,4 +81,49 @@ public class Day7 {
         OnDutyRequest onDutyRequest = new OnDutyRequest("Menaga","11.07.2026","Culturals");
         onDutyRequest.rejectOnDutyRequest();
     }
+}*/
+
+import jdk.dynalink.beans.StaticClass;
+
+public class Day7 {
+    static class payment {
+        String amount;
+
+        void transfer() {
+            System.out.println("pay here");
+        }
+    }
+
+    static class upipayment extends payment {
+        @Override
+        void transfer() {
+            System.out.println("upipayment");
+        }
+    }
+
+    static class cardpayment extends payment {
+        @Override
+        void transfer() {
+            System.out.println("cardpayment");
+        }
+    }
+
+
+    static class netbanking extends payment {
+        @Override
+        void transfer() {
+            System.out.println("netbanking");
+        }
+    }
+    static void main(){
+        upipayment upipayment=new upipayment();
+        upipayment.transfer();
+
+        cardpayment cardpayment =new cardpayment();
+        cardpayment.transfer();
+
+        netbanking netbanking =new netbanking();
+        netbanking.transfer();
+    }
 }
+
