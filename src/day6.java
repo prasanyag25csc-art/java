@@ -6,7 +6,7 @@ public class day6 {
         int Fuel;
 
         Car() {
-            System.out.println("constructer called");
+            System.out.println("constructor called");
         }
 
         Car(String Brand, String Color, int Speed, int Fuel) {
