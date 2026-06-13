@@ -74,12 +74,32 @@
 } */
 
 
-public class day8{
+/*public class day8{
     record CourseRecord(int course,int dept){
     }
     static void main(){
         CourseRecord courserecord=new CourseRecord(123,34);
         System.out.println(courserecord.course());
         System.out.println(courserecord.dept());
+    }
+}
+*/
+
+public class day8 {
+    enum LANGUAGE{
+        EN("english"),
+        GR("German"),
+        JP("Japanese"),
+        TA("Tamil");
+        String value;
+        LANGUAGE(String value){
+            this.value=value;
+        }
+    }
+    static void main(){
+        System.out.println(LANGUAGE.EN.value);
+        System.out.println(LANGUAGE.TA.value);
+        System.out.println(LANGUAGE.GR.value);
+        System.out.println(LANGUAGE.TA.value);
     }
 }
