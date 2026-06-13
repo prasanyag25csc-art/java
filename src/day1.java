@@ -22,6 +22,8 @@ public class day1 {
             if (mark > 40) {
                 System.out.println(mark + "");
 
+
+
             }
         }
     }
