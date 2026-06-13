@@ -1,25 +1,5 @@
-/*public class day8{
-    interface Employee{
-        String name();
-        String id();
-        String salary();
-    }
-    static class bankEmployee implements Employee{
-        @Override
-        public String solveproblem() {
-        return "solution";
-        }
-    }
-    static class checkingEmployee implements Employee{
-        @Override
-        public String solveproblem() {
-        }
-}
-static void main(){
-    }
-}*/
 
-public class day8 {
+/*public class day8 {
 
     interface Employee {
         String Name();
@@ -31,7 +11,7 @@ public class day8 {
 
         @Override
         public String Name() {
-            return "parasanya";
+            return "prasanya";
         }
 
         @Override
@@ -90,5 +70,16 @@ public class day8 {
         System.out.println("ID : " + checking.id());
         System.out.println("Salary : " + checking.Salary());
         checking.work();
+    }
+} */
+
+
+public class day8{
+    record CourseRecord(int course,int dept){
+    }
+    static void main(){
+        CourseRecord courserecord=new CourseRecord(123,34);
+        System.out.println(courserecord.course());
+        System.out.println(courserecord.dept());
     }
 }
