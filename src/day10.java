@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 public class day10 {
     static void main(){
         String[] Student={"aishu","pras","gopz","ijk","mon"};
@@ -19,4 +19,7 @@ public class day10 {
         }
 
 
-}}
+}
+}*/
+
+
