@@ -1,27 +1,45 @@
-public class day4 {
-    /*void main (){
-    int n=5;
-    for(int row=1;row<=n;row++){
-        for(int column=1;column<=row;column++){
-            System.out.print(column);
+/*void main(){
+    int[][] marks = new int[5][3];
+    int[][] studentMarks = {
+            {78, 90, 34},
+            {89, 65, 89},
+            {12, 34, 56},
+            {66, 12, 89},
+            {33, 77, 88}
+    };
+    for(int row = 0; row < studentMarks.length;row++){
+        for(int col = 0; col < studentMarks[row] .length; col++){
+            System.out.print(studentMarks[row][col] +" ");
         }
         System.out.println();
     }
 }*/
-    void main() {
-        int[] marks= {87,32,44,89,23};
-        System.out.println("pass marl");
-        for(int mark: marks){
-            if(mark>=40){
-                System.out.println(mark+"");
+    /*public static void main(String[]args){
+        int[][] atttendance ={
+                {0,1,0},
+                {1,0,0},
+                {1,1,1},
+                {1,0,1},
+                {0,0,0},
+        };
+        for(int row =0;row < atttendance.length;row++){
+            System.out.print("student"+(row+1) +":");
+            for(int column = 0; column < atttendance[row].length;column++){
+                if(atttendance[row][column]==1){
+                    System.out.println("class:"+(1+column)+":absent");
+                }
+                else{
+                    System.out.println("class"+(1+column)+":absent");
+                }
             }
+            System.out.println();
         }
-        System.out.println("fail marks");
-        for(int mark:marks){
-            if(mark<40){
-                System.out.println(mark+"");
-            }
-        }
-    }
-
+    }*/
+void main() {
+    int result = multiply(5, 4);
+    System.out.println(result);
+    System.out.println(multiply(5, 5));
+}
+public int multiply(int a,int b) {
+    return a * b;
 }
