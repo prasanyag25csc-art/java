@@ -21,5 +21,22 @@ public class day10 {
 
 }
 }*/
+import java.util.LinkedList;
+public class day10 {
+    static void main() {
+        LinkedList<String> queue = new LinkedList<String>();
+        queue.add("pras");
+        queue.add("aishu");
+        queue.add("gopi");
+        queue.add("yaz");
+        queue.add("moni");
+        while(!queue.isEmpty()) {
+            process(queue);
+        }
+    }
+    static void process(LinkedList<String> queue){
+        String removed=queue.removeFirst();
+        System.out.println("Removed:"+removed);
 
-
+    }
+}
