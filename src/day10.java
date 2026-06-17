@@ -42,7 +42,7 @@ public class day10 {
     }
 }*/
 
-import java.util.LinkedList;
+/*import java.util.LinkedList;
 class Student{
     String name;
     int regno;
@@ -88,4 +88,4 @@ public class day10{
 
         }
     }
-}
+}*/
