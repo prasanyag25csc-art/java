@@ -15,7 +15,6 @@ public class day10ex {
         finally {
             System.out.println("remaining code will be executed");
         }
-
     }
 }
 
