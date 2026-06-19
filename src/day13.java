@@ -1,6 +1,11 @@
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.List;
+
+/*import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,7 +23,28 @@ public class day13{
             newData.add("student3");
             newData.add("student4");
         }catch (IOException io){
-            System.out.println("Error reading file");
+           io.printStackTrace();
+        }
+    }
+}
+*/
+
+public class day13{
+
+    static void main() {
+        Path path = Path.of("files", "students.csv");
+        try {
+            List<String> students = Files.readAllLines(path);
+
+            for (String line : students) {
+                String[] row = line.split(",");
+                for (String s : row) {
+                    System.out.print(s + " | ");
+                }
+                System.out.println();
+            }
+        } catch (IOException io) {
+            io.printStackTrace();
         }
     }
 }
